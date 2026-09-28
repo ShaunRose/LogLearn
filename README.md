@@ -9,8 +9,9 @@ npm install --include=optional
 npm run dev
 ```
 
-Build output is kept in `.next-linux` on WSL and `.next-win32` on Windows to
-avoid sharing compiler caches and lockfiles. Run dependency installation in the
+Development output is kept in `.next-linux` on WSL and `.next-win32` on Windows to
+avoid sharing compiler caches and lockfiles. Production builds use `.next`,
+including deployments on Vercel. Run dependency installation in the
 same environment as the development server; native dependencies differ between
 Windows and Linux. Stop the server before switching environments.
 
